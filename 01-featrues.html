@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES Modules特性</title>
+</head>
+<body>
+    <!-- 1. type="module" 实现ES Module-->
+    <script type="module"></script>
+
+    <!-- 2. ES Module 自动采用严格模式，相当于 ‘use strict' -->
+    <script type="module">
+        console.log(this)
+    </script>
+
+    <!-- 3. ES Module 是通过CORS去请求外部JS 模块 -->
+    <!-- <script type="module" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script type="module" src="https://unpkg.com/jquery@3.5.1/dist/jquery.js"></script>
+
+
+
+    
+</body>
+</html>
